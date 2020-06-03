@@ -1,2 +1,13 @@
-# teste-jenkins
-this is for test jenkins
+Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent { docker { image 'node:6.3' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'npm --version'
+            }
+        }
+    }
+}
+Toggle Scripted Pipeline (Advanced)
+Ru
